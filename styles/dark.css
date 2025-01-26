@@ -4,13 +4,25 @@
   переключая тему
 */
 
-:root.theme-dark {
+.page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --background_color:#000028;
+  --background_image: url(../images/cover-image-dark.png);
+  --basic_color: #000028;
+  --nav_color: #FF0070;
+  --rec_color: #FF0070;
+  --accent_title_color: #FF0070;
+  --accent_color: #FF0070;
+  --title_font_color: #DB00FF;
+  --chapter_title_color: #FF0070;
+  --text_font_color: #F1B2CE;
+  --btn_border_color_40: hsla(334, 100%, 50%, 0.4);
 }
 
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+.page.theme_dark .header__theme-menu-button_active {
+  pointer-events: none;
+  outline: 1px solid var(--accent_color);
 }

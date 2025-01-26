@@ -2,3 +2,27 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --font_family: 'IBM Plex mono', monospace;
+  --margin_page: 10px;
+  --grid-gap: 10px;
+  --background_color:#000028;
+  --background_image: url(../images/cover-image-dark.png);
+  --basic_color: #000028;
+  --nav_color: #FF0070;
+  --rec_color: #FF0070;
+  --accent_title_color: #FF0070;
+  --accent_color: #FF0070;
+  --title_font_color: #DB00FF;
+  --chapter_title_color: #FF0070;
+  --text_font_color: #F1B2CE;
+  --nav_line_height:18px;
+  --text_font_size: 18px;
+  --title_font_weight: 700;
+  --subtitle_font_weight: 700;
+  --text_line_height: 23.4px;
+  --text_font_weight: 400;
+  --title_font_size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title_line_height: 95.7px;
+  --btn_border_color_40: hsla(334, 100%, 50%, 0.4);
+}
