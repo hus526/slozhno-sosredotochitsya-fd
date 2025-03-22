@@ -4,16 +4,29 @@
   переключая тему
 */
 
-.page.theme_dark {
-  --bg-color: #000028;
-  --bg-accent-color: #ff0070;
-  --bg-image: url("../images/cover-image-dark.png");
-  --text-color: #f1b2ce;
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+:root.theme-dark {
   --accent-color: #ff0070;
-  --title-accent-color: #FF0070;
-  --title-accent-color-desctop: #ff0070;
-  --text-title-color: #DB00FF;
-  --text-contrast-color: #000028;
-  --button-border-hover: rgba(255, 0, 112, 0.4);
-  --opacity: 1;
-} 
+  --header-bg-img: url(../images/cover-image-dark.png);
+  --bg-color: #000028;
+  --title-color: #db00ff;
+  --text-size: 18px;
+  --text-color: #000028;
+  --text-normal: 400;
+  --text-bold: 700;
+  --main-font: "IBM Plex mono", sans-serif;
+  --btn-color: #ff0070;
+  --description-color: #f1b2ce;
+  --s-padding: 10px;
+  --m-padding: 20px;
+  --hover-color: rgba(255, 0, 112, 0.4);
+}
+
+:root.theme-dark .decorative__element {
+  display: flex;
+}

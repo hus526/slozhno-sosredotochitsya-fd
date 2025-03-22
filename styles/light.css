@@ -4,37 +4,48 @@
   переключая тему
 */
 
-.page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+:root.theme-light {
+  --accent-color: #ff8dcb;
+  --header-bg-img: url(../images/cover-image-light.png);
+  --bg-color: #fff1f7;
+  --title-color: #ffc2e6;
+  --text-size: 18px;
+  --text-color: #353430;
+  --text-normal: 400;
+  --text-bold: 700;
+  --main-font: "IBM Plex mono", sans-serif;
+  --btn-color: #353430;
+  --description-color: #353430;
+  --s-padding: 10px;
+  --m-padding: 20px;
+  --hover-color: rgba(50, 49, 45, 0.4);
+}
 
-  --background_color: #fff1f7;
-  --background_image: url(../images/cover-image-light.png);
-  --basic_color: #353430;
-  --nav_color: #353430;
-  --rec_color: transparent;
-  --accent_title_color: #ff0070;
-  --accent_color: #ff8dcb;
-  --title_font_color: #ffc2e6;
-  --chapter_title_color: #353430;
-  --text_font_color: #353430;
-  --btn_border_color_40: hsla(48, 5%, 20%, 0.4);
+:root.theme-light .decorative__element {
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background_color: #fff1f7;
-    --background_image: url(../images/cover-image-light.png);
-    --basic_color: #353430;
-    --nav_color: #353430;
-    --rec_color: transparent;
-    --accent_title_color: #ff0070;
-    --accent_color: #ff8dcb;
-    --title_font_color: #ffc2e6;
-    --chapter_title_color: #353430;
-    --text_font_color: #353430;
-    --btn_border_color_40: hsla(48, 5%, 20%, 0.4);
+    /* Дублируем переменные светлой темы */
+    --accent-color: #ff8dcb;
+    --header-bg-img: url(../images/cover-image-light.png);
+    --bg-color: #fff1f7;
+    --title-color: #ffc2e6;
+    --text-size: 18px;
+    --text-color: #353430;
+    --text-normal: 400;
+    --text-bold: 700;
+    --main-font: "IBM Plex mono", sans-serif;
+    --btn-color: #353430;
+    --description-color: #353430;
+    --s-padding: 10px;
+    --m-padding: 20px;
+    --hover-color: rgba(50, 49, 45, 0.4);
+    
+  }
+
+  .decorative__element {
+    display: none;
   }
 }
