@@ -15,15 +15,9 @@
   --header-bg-img: url(../images/cover-image-dark.png);
   --bg-color: #000028;
   --title-color: #db00ff;
-  --text-size: 18px;
   --text-color: #000028;
-  --text-normal: 400;
-  --text-bold: 700;
-  --main-font: "IBM Plex mono", sans-serif;
   --btn-color: #ff0070;
   --description-color: #f1b2ce;
-  --s-padding: 10px;
-  --m-padding: 20px;
   --hover-color: rgba(255, 0, 112, 0.4);
 }
 

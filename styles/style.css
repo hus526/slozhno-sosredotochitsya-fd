@@ -10,7 +10,7 @@
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--bg-color);
-  font-family: var(--main-font);
+  font-family: var(--main-font, sans-serif);
   font-size: var(--text-size);
 }
 
@@ -110,13 +110,13 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 95.7px;
   text-shadow: 4px 4px var(--accent-color);
-  font-family: var(--main-font);
+  font-family: var(--main-font, sans-serif);
   font-weight: var(--text-bold);
 }
 
 .header__text {
   max-inline-size: 355px;
-  font-family: var(--main-font);
+  font-family: var(--main-font, sans-serif);
   font-weight: 700;
   line-height: 23.4px;
 }
@@ -142,7 +142,7 @@
 }
 
 .concentration-text {
-  font-family: IBM Plex Mono;
+  font-family: 'IBM Plex Mono', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 22.4px;
@@ -213,7 +213,6 @@
   object-position: center;
 }
 
-
 .footer {
   display: flex;
   padding: 10px;
@@ -222,7 +221,6 @@
   align-items: center;
   block-size: 100vh;
   min-block-size: 668px;
-
 }
 
 .footer__decor {
