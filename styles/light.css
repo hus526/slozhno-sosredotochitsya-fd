@@ -9,19 +9,14 @@
   --header-bg-img: url(../images/cover-image-light.png);
   --bg-color: #fff1f7;
   --title-color: #ffc2e6;
-  --text-size: 18px;
   --text-color: #353430;
-  --text-normal: 400;
-  --text-bold: 700;
   --main-font: "IBM Plex mono", sans-serif;
   --btn-color: #353430;
   --description-color: #353430;
-  --s-padding: 10px;
-  --m-padding: 20px;
   --hover-color: rgba(50, 49, 45, 0.4);
 }
 
-:root.theme-light .decorative__element {
+:root.theme-light .rec {
   display: none;
 }
 
@@ -39,7 +34,7 @@
     
   }
 
-  .decorative__element {
+  .rec {
     display: none;
   }
 }
