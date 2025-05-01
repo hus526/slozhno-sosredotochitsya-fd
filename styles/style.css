@@ -99,10 +99,21 @@
   text-transform: lowercase;
 }
 
+.header__theme-menu-button:not(:disabled):hover {
+  border: 1px solid var(--hover-color);
+}
 
 .header__theme-menu-button_active {
   border: 1px solid var(--btn-color);
   pointer-events: none;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--btn-color);
 }
 
 .header__title {
@@ -145,7 +156,7 @@
   font-family: 'IBM Plex Mono', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 22.4px;
+  line-height: 23.4px;
   color: var(--btn-color);
 }
 
@@ -171,39 +182,46 @@
   cursor: pointer;
 }
 
-.chapter {
-  padding-block-start: 34px;
-  padding-block-end: 34px;
+.link:hover {
+  border-bottom: 1px solid var(--description-color);
 }
 
-.chapter__title {
-  max-inline-size: 325px;
-  font-size: 18px;
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  border: 1px solid var(--description-color);
+}
+
+.chapter {
+  padding-block-start: 32px;
+  padding-block-end: 32px;
 }
 
 .advices {
-  padding-block-end: 45px;
+  padding-block-end: 33px;
 }
 
 .content__advices {
-  margin-top: 15px;
+  margin-top: 22px;
 }
 
 .concentration__subparagraph {
   font-weight: 400;
-  gap: 10px;
 }
 
 .gallery {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+   gap: 10px; 
+
 }
 
 .gallery-container {
   display: flex;
   flex-direction: column;
-  gap: 8px; 
+  gap: 10px; 
 }
 
 .images {
@@ -256,7 +274,6 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     align-self: end;
   }
-
   .header__text {
     max-inline-size: 364px;
     inline-size: 50%;
@@ -293,10 +310,8 @@
   }
 
  .gallery {
-    padding-left: -25px;
-    gap: 29px;
+    gap: var(--m-padding);
   } 
-
   .gallery-container {
     display: grid;
     gap: var(--m-padding);
@@ -324,15 +339,6 @@
   .images:last-of-type {
     grid-column: 2 / 4;
   } 
-
-  .images {
-    inline-size: 100%;
-    block-size: 100%;
-    max-block-size: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  
 
   .footer__decor {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -399,6 +405,10 @@
   }
 
   .advices {
-    gap: 10px;
+    gap: 8px;
+  }
+
+  .gallery {
+    gap: 19px;
   }
 }
