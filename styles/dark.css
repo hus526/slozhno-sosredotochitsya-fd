@@ -21,6 +21,6 @@
   --hover-color: rgba(255, 0, 112, 0.4);
 }
 
-:root.theme-dark .decorative__element {
+:root.theme-dark .rec {
   display: flex;
 }
